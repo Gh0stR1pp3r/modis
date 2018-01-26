@@ -12,7 +12,7 @@ WORKDIR /usr/src/Modis
 VOLUME /usr/src/Modis
 
 # Install pip dependencies
-RUN pip3 install --upgrade -r requirements.txt
-RUN pip3 install modis --upgrade
+RUN pip install --upgrade -r requirements.txt
+RUN pip install modis --upgrade
 
 CMD python launcher.py

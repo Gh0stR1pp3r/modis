@@ -25,15 +25,25 @@ Module credentials - /usr/src/Modis/data.json
 
 Create launcher.py file with bot credentials in a folder of your choosing and map it to /usr/src/Modis/launcher.py with following contents:
 
+
 import modis
 
 DISCORD_TOKEN = "Discord bot token here"\
-CLIENT_ID = "Discord bot client ID here"\
+CLIENT_ID = "Discord bot client ID here"
 
 modis.console(\
     discord_token=DISCORD_TOKEN,\
-    discord_client_id=CLIENT_ID
+    discord_client_id=CLIENT_ID\
 )
+
+## Running bot in docker
+
+Example:
+
+docker create --name=modis \ \
+--restart=unless-stopped \ \
+-v /home/bob/modis/launcher.py:/usr/src/Modis/launcher.py \ \
+gh0str1pp3r/modis
 
 ## About Modis
 

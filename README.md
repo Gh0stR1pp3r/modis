@@ -17,8 +17,11 @@ Do not disclose your bot credentials to anyone.
 Go ahead and pull image from the hub - docker pull gh0str1pp3r/modis
 
 Main directory in the image - /usr/src/Modis
+
 Configuration file - /usr/src/Modis/launcher.py
+
 Module credentials - /usr/src/Modis/data.json
+
 
 Create launcher.py file with bot credentials in a folder of your choosing and map it to /usr/src/Modis/launcher.py with following contents:
 
@@ -34,9 +37,9 @@ modis.console(
 
 Example of launch command in docker:
 
-docker create --name=modis \
---restart=unless-stopped \
--v /home/bob/modis/launcher.py:/usr/src/Modis/launcher.py \
+docker create --name=modis \\
+--restart=unless-stopped \\
+-v /home/bob/modis/launcher.py:/usr/src/Modis/launcher.py \\
 gh0str1pp3r/modis
 
 ## About Modis

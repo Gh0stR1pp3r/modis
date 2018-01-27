@@ -27,20 +27,13 @@ Create launcher.py file with bot credentials in a folder of your choosing and ma
 
 import modis
 
-DISCORD_TOKEN = "Discord bot token here"
-CLIENT_ID = "Discord bot client ID here"
+DISCORD_TOKEN = "Discord bot token here" \
+CLIENT_ID = "Discord bot client ID here" \
 
-modis.console(
-    discord_token=DISCORD_TOKEN,
-    discord_client_id=CLIENT_ID
+modis.console( \
+    discord_token=DISCORD_TOKEN, \
+    discord_client_id=CLIENT_ID \
 )
-
-Example of launch command in docker:
-
-docker create --name=modis \\
---restart=unless-stopped \\
--v /home/bob/modis/launcher.py:/usr/src/Modis/launcher.py \\
-gh0str1pp3r/modis
 
 ## About Modis
 

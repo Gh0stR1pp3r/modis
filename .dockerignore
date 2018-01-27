@@ -1,0 +1,10 @@
+# Config files
+launcher.py
+data.json
+
+# Docker
+.dockerignore
+Dockerfile
+
+# Git
+.gitignore

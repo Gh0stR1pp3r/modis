@@ -4,11 +4,9 @@ Latest release: [Beta v0.3.2](https://github.com/Infraxion/modis/releases/tag/0.
 
 # USAGE
 
-## Create bot and invite it
+## Creating bot and other API keys
 
-You can create your bot here --> https://discordapp.com/developers/applications/me
-
-After that check your bot ID and use this link to invite bot to your server (replace ID in the link with yours) --> https://discordapp.com/oauth2/authorize?&client_id=YOUR_CLIENT_ID_HERE&scope=bot&permissions=0
+https://infraxion.github.io/modis/guides/api-keys/
 
 Do not disclose your bot credentials to anyone.
 

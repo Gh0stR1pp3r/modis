@@ -2,9 +2,7 @@ FROM alpine:latest
 
 # Install Dependencies
 RUN apk update \
- && apk add coreutils ffmpeg python3-dev
- 
-#python3-dev ca-certificates gcc make linux-headers musl-dev ffmpeg libffi-dev
+ && apk add coreutils python3-dev ca-certificates gcc make linux-headers musl-dev ffmpeg libffi-dev libxslt-dev
 
 # Add project source
 ADD . /usr/src/Modis
@@ -15,6 +13,5 @@ VOLUME /usr/src/Modis
 
 # Install pip dependencies
 RUN pip3.6 install --upgrade -r requirements.txt
-#RUN pip3.6 install modis --upgrade
 
 CMD python3.6 launcher.py

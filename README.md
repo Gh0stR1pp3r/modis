@@ -27,12 +27,12 @@ Create launcher.py file with bot credentials in a folder of your choosing and ma
 
 import modis
 
-DISCORD_TOKEN = "Discord bot token here" \
-CLIENT_ID = "Discord bot client ID here" \
+DISCORD_TOKEN = "Discord bot token here"\
+CLIENT_ID = "Discord bot client ID here"\
 
-modis.console( \
-    discord_token=DISCORD_TOKEN, \
-    discord_client_id=CLIENT_ID \
+modis.console(\
+    discord_token=DISCORD_TOKEN,\
+    discord_client_id=CLIENT_ID
 )
 
 ## About Modis

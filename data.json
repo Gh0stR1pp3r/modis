@@ -1,0 +1,48 @@
+{
+  "log_level": "DEBUG",
+  "discord": {
+    "client_id": "",
+    "token": "",
+    "keys": {
+      "google_api_key": "",
+      "reddit_api_client_id": "",
+      "reddit_api_client_secret": "",
+      "reddit_api_user_agent": "",
+      "soundcloud_client_id": "",
+      "spotify_client_id": "",
+      "spotify_client_secret": ""
+    },
+    "servers": {
+      "YOUR_SERVER_ID_HERE": {
+        "prefix": "!",
+        "BeTheBot": {
+          "activated": true
+        },
+        "Gamedeals": {
+          "activated": true
+        },
+        "Help": {},
+        "Hex": {
+          "activated": true
+        },
+        "Manager": {},
+        "Music": {
+          "activated": true,
+          "topic_id": "",
+          "volume": 20
+        },
+        "Replies": {
+          "activated": true,
+          "normal": {},
+          "tts": {}
+        },
+        "RocketLeague": {
+          "activated": true
+        },
+        "Tableflip": {
+          "activated": true
+        }
+      }
+    }
+  }
+}
